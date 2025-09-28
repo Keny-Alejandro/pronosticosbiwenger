@@ -295,10 +295,334 @@
         <h1>⚽ Pronósticos Biwenger</h1>
         <p>¡Haz tus predicciones para esta semana!</p>
         <div class="prizes">
-          <h2>APUESTAS CERRADAS, GRACIAS POR PARTICIPAR.</h2>
+          <h2>🏆 PREMIOS</h2>
+          <ul>
+            <li>🎯 Acertar el resultado: <strong>$1.000.000</strong></li>
+            <li>⚽ Acertar el primer goleador: <strong>$500.000</strong></li>
+            <li>💰 Acertar ambas cosas: <strong>$2.000.000</strong></li>
+          </ul>
         </div>
       </div>
-    </div>
+
+      <div class="user-selection">
+        <h2>Usuario</h2>
+        <select id="userSelect">
+          <option value=""></option>
+          <option value="Carlos">Carlos</option>
+          <option value="Mauricio">Mauricio</option>
+          <option value="Vivas">Vivas</option>
+          <option value="Miguel">Miguel</option>
+          <option value="Sebastian">Sebastian</option>
+          <option value="Anthony">Anthony</option>
+          <option value="Santiago">Santiago</option>
+          <option value="William">William</option>
+          <option value="Alejandro">Alejandro</option>
+          <option value="Jaime">Jaime</option>
+          <option value="Keny">Keny</option>
+        </select>
+      </div>
+
+      <div id="matchesContainer" class="matches-container">
+        <!-- Partido 1 -->
+        <div class="match">
+          <div class="match-header">
+            <div class="team home">
+              <div class="team-name">Real Madrid</div>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAU4Hsoyj21D28MnDExAqGaDbBU-MOEd2Fh9iF9p2dGQtKTvSteVSFtYXaztZsPpJuPlgqYjDguGTSUJRG8u0uMEscEjOQFCQVFfrGVhfy5dg4qxZmgqLQqdM3bkxODqXkce0u14sr5sk/s1600/Real+Madrid+CF.png"
+                alt="Real Madrid"
+              />
+            </div>
+            <div class="vs">VS</div>
+            <div class="team away">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip_9iJ5rOxCFIMg8IZyqgP4N7hqRmFzrp9gfhTGbRQwQo878o3vaLs9eHdo-8FVhi4QZePam9AThbb1zNt04j7rQbK45gHy0fv4-4VFm7w221QREgMP7ytlOGaKjScAuDRhqu0UWH5EJ2e/s1600/Villarreal+CF.png"
+                alt="Villarreal"
+              />
+              <div class="team-name">Villarreal</div>
+            </div>
+          </div>
+
+          <div class="score-inputs">
+            <div class="score-group">
+              <label>Real Madrid</label>
+              <input
+                type="number"
+                class="score-input home-score"
+                min="0"
+                max="20"
+                data-match="1"
+              />
+            </div>
+            <div class="score-group">
+              <label>Villarreal</label>
+              <input
+                type="number"
+                class="score-input away-score"
+                min="0"
+                max="20"
+                data-match="1"
+              />
+            </div>
+          </div>
+
+          <div class="player-selection" data-match="1">
+            <label>¿Quién crees que marcará el primer gol?</label>
+            <select class="player-select">
+              <option value="">-- Selecciona un jugador --</option>
+              <option value="Huijsen">Huijsen (RMA)</option>
+              <option value="Carvajal">Carvajal (RMA)</option>
+              <option value="Alexander-Arnold">Alexander-Arnold (RMA)</option>
+              <option value="Militao">Militao (RMA)</option>
+              <option value="Carreras">Carreras (RMA)</option>
+              <option value="Rudiger">Rudiger (RMA)</option>
+              <option value="Mendy">Mendy (RMA)</option>
+              <option value="Asencio">Asencio (RMA)</option>
+              <option value="Carvajal">Carvajal (RMA)</option>
+              <option value="Alaba">Alaba (RMA)</option>
+              <option value="García">Fran García (RMA)</option>
+              <option value="Guler">Arda Guler (RMA)</option>
+              <option value="Valverde">Valverde (RMA)</option>
+              <option value="Tchouameni">Tchouameni (RMA)</option>
+              <option value="Ceballos">Ceballos (RMA)</option>
+              <option value="Bellingham">Bellingham (RMA)</option>
+              <option value="Camavinga">Camavinga (RMA)</option>
+              <option value="Mbappé">Mbappé (RMA)</option>
+              <option value="Vinícius">Vinícius (RMA)</option>
+              <option value="Mastantuono">Mastantuono (RMA)</option>
+              <option value="Brahim">Brahim (RMA)</option>
+              <option value="Rodrygo">Rodrygo (RMA)</option>
+              <option value="Gonzalo">Gonzalo García (RMA)</option>
+              <option value="Endrick">Endrick (RMA)</option>
+              <option value="Marín">Rafa Marín (VIL)</option>
+              <option value="Mourino">Mouriño (VIL)</option>
+              <option value="Foyth">Foyth (VIL)</option>
+              <option value="Cardona">Sergi Cardona (VIL)</option>
+              <option value="Veiga">Renato Veiga (VIL)</option>
+              <option value="Pedraza">Pedraza (VIL)</option>
+              <option value="Navarro">Pau Navarro (VIL)</option>
+              <option value="Costa">Logan Costa (VIL)</option>
+              <option value="Kambwala">Kambwala (VIL)</option>
+              <option value="Altimira">Adrià Altimira (VIL)</option>
+              <option value="Gueye">Pape Gueye (VIL)</option>
+              <option value="Buchanan">Buchanan (VIL)</option>
+              <option value="Moleiro">Moleiro (VIL)</option>
+              <option value="Parejo">Parejo (VIL)</option>
+              <option value="Comesana">Comesaña (VIL)</option>
+              <option value="Partey">Thomas Partey (VIL)</option>
+              <option value="Pepe">Pépé (VIL)</option>
+              <option value="Oluwaseyi">Oluwaseyi (VIL)</option>
+              <option value="Mikautadze">Mikautadze (VIL)</option>
+              <option value="Solomon">Solomon (VIL)</option>
+              <option value="Gerard">Gerard Moreno (VIL)</option>
+              <option value="Ayoze">Ayoze (VIL)</option>
+              <option value="Cabanes">Pau Cabanes (VIL)</option>
+              <option value="Akhomach">Akhomach (VIL)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Partido 2 -->
+        <div class="match">
+          <div class="match-header">
+            <div class="team home">
+              <div class="team-name">Juventus</div>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8NYzlRAjMJJTj5jJCu5EaoRb8xcOtuxuezA-AL6XRqd8oCWFPA8rG2Os7cY2omAwbRflGQtT0FONbe60bYiUUZxvCiz7wwOQjm1CauIiLH8rqG-bbW9CRTysIr7yHtc9G64M-7lt35ypP/s1600/Juventus+FC.png"
+                alt="Juventus"
+              />
+            </div>
+            <div class="vs">VS</div>
+            <div class="team away">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsJuJC34cv4mN5M6Wp15qwgN6OFl1YDJJPyst6CohQHhP8vb_HtfeOMmJJRmpkGFdhAAD2GI5-Ws2VK9i2JTL0qwcFjFo4OYml29CvXxhlUeMl24vVO1Xy4Fb27kq36_zlk_NGzBIlFy8/s1600/AC+Milan.png"
+                alt="Milán"
+              />
+              <div class="team-name">Milán</div>
+            </div>
+          </div>
+
+          <div class="score-inputs">
+            <div class="score-group">
+              <label>Juventus</label>
+              <input
+                type="number"
+                class="score-input home-score"
+                min="0"
+                max="20"
+                data-match="2"
+              />
+            </div>
+            <div class="score-group">
+              <label>Milán</label>
+              <input
+                type="number"
+                class="score-input away-score"
+                min="0"
+                max="20"
+                data-match="2"
+              />
+            </div>
+          </div>
+
+          <div class="player-selection" data-match="2">
+            <label>¿Quién crees que marcará el primer gol?</label>
+            <select class="player-select">
+              <option value="">-- Selecciona un jugador --</option>
+              <option value="Pavlovic">Pavlovic (MIL)</option>
+              <option value="Tomori">Tomori (MIL)</option>
+              <option value="Gabbia">Gabbia (MIL)</option>
+              <option value="Estupinan">Estupiñan (MIL)</option>
+              <option value="Winter">De Winter (MIL)</option>
+              <option value="Athekame">Athekame (MIL)</option>
+              <option value="Odogu">Odogu (MIL)</option>
+              <option value="Bartesaghi">Bartesaghi (MIL)</option>
+              <option value="Modric">Modric (MIL)</option>
+              <option value="Saelemakers">Saelemakers (MIL)</option>
+              <option value="Fofana">Fofana (MIL)</option>
+              <option value="Loftus">Loftus-Cheek (MIL)</option>
+              <option value="Rabiot">Rabiot (MIL)</option>
+              <option value="Ricci">Ricci (MIL)</option>
+              <option value="Jashari">Jashari (MIL)</option>
+              <option value="Giménez">Giménez (MIL)</option>
+              <option value="Pulisic">Pulisic (MIL)</option>
+              <option value="Nkunku">Nkunku (MIL)</option>
+              <option value="Leao">Rafa Leao (MIL)</option>
+              <option value="Kelly">Lloyd Kelly (JUV)</option>
+              <option value="Bremer">Bremer (JUV)</option>
+              <option value="Mario">Joao Mario (JUV)</option>
+              <option value="Gatti">Gatti (JUV)</option>
+              <option value="Kalulu">Kalulu (JUV)</option>
+              <option value="Cambiaso">Andrea Cambiaso (JUV)</option>
+              <option value="Cabal">Cabal (JUV)</option>
+              <option value="Rugani">Rugani (JUV)</option>
+              <option value="Rouhi">Rouhi (JUV)</option>
+              <option value="Thuram">Thuram (JUV)</option>
+              <option value="Locatelli">Locatelli (JUV)</option>
+              <option value="Koopmeiners">Koopmeiners (JUV)</option>
+              <option value="Adzic">Adzic (JUV)</option>
+              <option value="McKennie">McKennie (JUV)</option>
+              <option value="Kostic">Kostic (JUV)</option>
+              <option value="Miretti">Miretti (JUV)</option>
+              <option value="Yildiz">Kenan Yildiz (JUV)</option>
+              <option value="Vlahovic">Vlahovic (JUV)</option>
+              <option value="Conceicao">Conceicao (JUV)</option>
+              <option value="David">Jonathan David (JUV)</option>
+              <option value="Openda">Openda (JUV)</option>
+              <option value="Zhegrova">Zhegrova (JUV)</option>
+              <option value="Milik">Milik (JUV)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Partido 3 -->
+        <div class="match">
+          <div class="match-header">
+            <div class="team home">
+              <div class="team-name">Chelsea</div>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguuxprZ5sA1-iczA7gP_HST6ldYgK3bjaxGBSnUSeE5rb3UixzUcQezBiSC8AJA_RmsG3x2xusJ2vyAi7ZyZ2OiOG2YfQ1BpxmfEsh8Bd5cCJWG1ELRmVd0YUhBSrsi0gVuJ8Nk4Xuq9I/"
+                alt="Chelsea"
+              />
+            </div>
+            <div class="vs">VS</div>
+            <div class="team away">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMmijYRPCbt7X-AOQDBcec5HNhxGKOzrpF5Tgc5Hxk3F-Bim2pGjbLpMTt8q5j_SDpNxtNJsDgX6nHITAKQGwch7dV-4F52u2iPO2qMmmbbWIBHi3dC_9eUzXCp9-3nmp5ByoFY5SEVcBX/s1600/Liverpool+FC.png"
+                alt="Liverpool"
+              />
+              <div class="team-name">Liverpool</div>
+            </div>
+          </div>
+
+          <div class="score-inputs">
+            <div class="score-group">
+              <label>Chelsea</label>
+              <input
+                type="number"
+                class="score-input home-score"
+                min="0"
+                max="20"
+                data-match="3"
+              />
+            </div>
+            <div class="score-group">
+              <label>Liverpool</label>
+              <input
+                type="number"
+                class="score-input away-score"
+                min="0"
+                max="20"
+                data-match="3"
+              />
+            </div>
+          </div>
+
+          <div class="player-selection" data-match="3">
+            <label>¿Quién crees que marcará el primer gol?</label>
+            <select class="player-select">
+              <option value="">-- Selecciona un jugador --</option>
+              <option value="Konate">Konaté (LIV)</option>
+              <option value="VanDijk">Van Dijk (LIV)</option>
+              <option value="Kerkez">Kerkez (LIV)</option>
+              <option value="Frimpong">Frimpong (LIV)</option>
+              <option value="Gomez">Gomez (LIV)</option>
+              <option value="Bradley">Bradley (LIV)</option>
+              <option value="Robertson">Robertson (LIV)</option>
+              <option value="Leoni">Leoni (LIV)</option>
+              <option value="Williams">Rhys Williams (LIV)</option>
+              <option value="Gravenberch">Gravenberch (LIV)</option>
+              <option value="Szoboszlai">Szoboszlai (LIV)</option>
+              <option value="Jones">Curtis Jones (LIV)</option>
+              <option value="Alexis">Mac Allister (LIV)</option>
+              <option value="Wirtz">Wirtz (LIV)</option>
+              <option value="Endo">Endo (LIV)</option>
+              <option value="Bajcetic">Bajcetic (LIV)</option>
+              <option value="Nyoni">Nyoni (LIV)</option>
+              <option value="Ekitiké">Ekitiké (LIV)</option>
+              <option value="Gakpo">Gakpo (LIV)</option>
+              <option value="Salah">Salah (LIV)</option>
+              <option value="Chiesa">Chiesa (LIV)</option>
+              <option value="Ngumoha">Ngumoha (LIV)</option>
+              <option value="Isak">Isak (LIV)</option>
+              <option value="Chalobah">Chalobah (CHE)</option>
+              <option value="James">Reece James (CHE)</option>
+              <option value="Adarabioyo">Adarabioyo (CHE)</option>
+              <option value="Cucurella">Cucurella (CHE)</option>
+              <option value="Gusto">Malo Gusto (CHE)</option>
+              <option value="Fofana">Fofana (CHE)</option>
+              <option value="Hato">Hato (CHE)</option>
+              <option value="Acheampong">Acheampong (CHE)</option>
+              <option value="Colwill">Colwill (CHE)</option>
+              <option value="Disasi">Disasi (CHE)</option>
+              <option value="Badiashile">Badiashile (CHE)</option>
+              <option value="Caicedo">Moisés Caicedo (CHE)</option>
+              <option value="Enzo">Enzo Fernández (CHE)</option>
+              <option value="Palmer">Cole Palmer (CHE)</option>
+              <option value="Andrey">Andrey Santos (CHE)</option>
+              <option value="Buonanotte">Buonanotte (CHE)</option>
+              <option value="Lavia">Roméo Lavia (CHE)</option>
+              <option value="Essugo">Essugo (CHE)</option>
+              <option value="Pedro">Joao Pedro (CHE)</option>
+              <option value="Neto">Pedro Neto (CHE)</option>
+              <option value="Estevao">Estevao (CHE)</option>
+              <option value="Gittens">Jamie Gittens (CHE)</option>
+              <option value="George">Tyrique George (CHE)</option>
+              <option value="Delap">Liam Delap (CHE)</option>
+              <option value="Garnacho">Garnacho (CHE)</option>
+              <option value="Guiu">Marc Guiu (CHE)</option>
+              <option value="Sterling">Sterling (CHE)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="submit-container">
+          <button class="submit-btn" onclick="submitPredictions()">
+            🚀 Enviar Pronósticos
+          </button>
+        </div>
+      </div>
+</div>
 
     <script>
       // Manejar selección de usuario
